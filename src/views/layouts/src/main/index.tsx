@@ -11,9 +11,11 @@ const MainLayout: FC<MainLayoutProps> = ({ title, children }) => {
   titlePage(title);
   return (
     <>
-      <Header />
       <Sidebar />
-      <main role="main">{children}</main>
+      <main role="main" className="sac_main">
+        <Header />
+        <div className="content">{children}</div>
+      </main>
     </>
   );
 };

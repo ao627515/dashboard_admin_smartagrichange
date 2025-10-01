@@ -1,49 +1,83 @@
-$default_primary: #C02322;
-$default_secondary: #111227;
-$default_tiertiary: #ffb0cb;
+// =========================
+// 🎨 PALETTE DE BASE
+// =========================
+$primary: #386641; // Vert foncé principal
+$secondary: #6a994e; // Vert secondaire
+$light: #f7f7f7; // Gris très clair (fond clair)
+$white: #ffffff; // Blanc pur
+$dark: #07020d; // Noir profond / anthracite
 
-$gradient1: linear-gradient(194deg, rgba(255,0,50,1) 0%, rgba(44,0,255,1) 89%);
-$gradient2: linear-gradient(194deg, rgba(255,79,0,1) 0%, rgba(153,255,0,1) 89%);
-$gradient3: linear-gradient(194deg, rgba(96,0,255,1) 0%, rgba(253,29,99,1) 50%, rgba(252,153,69,1) 100%);
+// =========================
+// 🌈 DÉGRADÉS
+// =========================
+$gradient1: linear-gradient(
+  194deg,
+  rgba(255, 0, 50, 1) 0%,
+  rgba(44, 0, 255, 1) 89%
+);
+$gradient2: linear-gradient(
+  194deg,
+  rgba(255, 79, 0, 1) 0%,
+  rgba(153, 255, 0, 1) 89%
+);
+$gradient3: linear-gradient(
+  194deg,
+  rgba(96, 0, 255, 1) 0%,
+  rgba(253, 29, 99, 1) 50%,
+  rgba(252, 153, 69, 1) 100%
+);
 
-$background_light: #ffffff;
-$background_dark: #000000;
+// =========================
+// 🖼️ COULEURS DE FOND
+// =========================
+$background_light: $white; // Fond clair
+$background_dark: $dark; // Fond sombre
 
-$background_tint_light: #e2e2e2;
-$background_tint_dark: #121212;
+$background_tint_light: $light; // Teinte claire
+$background_tint_dark: #121212; // Variante sombre neutre
 
-$color_dark: #fff;
-$color_light: #000000;
+// =========================
+// 🔤 COULEURS DE TEXTE
+// =========================
+$text_dark: $white; // Texte sur fond sombre
+$text_light: $dark; // Texte sur fond clair
 
-$color_tint_dark: #ffffff;
-$color_tint_light: #000000;
+$text_tint_dark: $white; // Variante claire sur sombre
+$text_tint_light: $dark; // Variante sombre sur clair
 
-$success: #00a77a;
-$danger: #a50014;
-$warning: #ffeb0c;
-$info: #0048ff;
+// =========================
+// ⚠️ COULEURS DE STATUT
+// =========================
+$success: #00a77a; // Succès (vert)
+$danger: #a50014; // Erreur / Danger (rouge foncé)
+$warning: #ffeb0c; // Attention (jaune)
+$info: #0048ff; // Information (bleu)
 
+// =========================
+// 🟢 VARIANTS EN TRANSPARENCE (RGBA)
+// =========================
 
-$default_primary_rgba: rgba($color: $default_primary, $alpha: 0.1);
-$default_primary_rgba2: rgba($color: $default_primary, $alpha: 0.3);
+// 👉 Couleurs principales
+$primary_rgba1: rgba($primary, 0.1);
+$primary_rgba2: rgba($primary, 0.3);
 
-$default_secondary_rgba: rgba($color: $default_secondary, $alpha: 0.1);
-$default_secondary_rgba2: rgba($color: $default_secondary, $alpha: 0.3);
+$secondary_rgba1: rgba($secondary, 0.1);
+$secondary_rgba2: rgba($secondary, 0.3);
 
-$default_tiertiary_rgba: rgba($color: $default_tiertiary, $alpha: 0.1);
-$default_tiertiary_rgba2: rgba($color: $default_tiertiary, $alpha: 0.3);
+// 👉 Couleurs de fond
+$background_rgba_light1: rgba($background_tint_light, 0.1);
+$background_rgba_light2: rgba($background_tint_light, 0.3);
+$background_rgba_light3: rgba($background_tint_light, 0.6);
 
-$background_rgba_light: rgba($color: $background_tint_light, $alpha: 0.1);
-$background_rgba_light1: rgba($color: $background_tint_light, $alpha: 0.3);
-$background_rgba_light2: rgba($color: $background_tint_light, $alpha: 0.6);
-$background_rgba_dark: rgba($color: $background_tint_dark, $alpha: 0.1);
-$background_rgba_dark1: rgba($color: $background_dark, $alpha: 0.3);
-$background_rgba_dark2: rgba($color: $background_dark, $alpha: 0.8);
+$background_rgba_dark1: rgba($background_tint_dark, 0.1);
+$background_rgba_dark2: rgba($background_dark, 0.3);
+$background_rgba_dark3: rgba($background_dark, 0.8);
 
-$color_rgba_light: rgba($color: $color_light, $alpha: 0.05);
-$color_rgba_light1: rgba($color: $color_light, $alpha: 0.3);
-$color_rgba_light2: rgba($color: $color_light, $alpha: 0.6);
+// 👉 Couleurs de texte
+$text_rgba_light1: rgba($text_light, 0.05);
+$text_rgba_light2: rgba($text_light, 0.3);
+$text_rgba_light3: rgba($text_light, 0.6);
 
-$color_rgba_dark: rgba($color: $color_dark, $alpha: 0.1);
-$color_rgba_dark1: rgba($color: $color_dark, $alpha: 0.3);
-$color_rgba_dark2: rgba($color: $color_dark, $alpha: 0.6);
+$text_rgba_dark1: rgba($text_dark, 0.1);
+$text_rgba_dark2: rgba($text_dark, 0.3);
+$text_rgba_dark3: rgba($text_dark, 0.6);
