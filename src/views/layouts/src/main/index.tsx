@@ -1,6 +1,6 @@
 import React, { FC } from "react";
-import Header from "../../../components/src/header";
 import { titlePage } from "../../../../utils/src/string";
+import { Sidebar, Header } from "../../../components";
 
 interface MainLayoutProps {
   title?: string;
@@ -12,6 +12,7 @@ const MainLayout: FC<MainLayoutProps> = ({ title, children }) => {
   return (
     <>
       <Header />
+      <Sidebar />
       <main role="main">{children}</main>
     </>
   );
