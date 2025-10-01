@@ -4,4 +4,54 @@
   background-color: $light;
   border-radius: 2rem;
   padding: 1rem 2rem;
+  display: flex;
+
+  &__right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+    width: 100%;
+
+    &__user {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      &__info {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        &__name {
+          font-weight: 600;
+          font-size: 0.9rem;
+          color: $dark;
+        }
+
+        &__email {
+          font-size: 0.7rem;
+          color: $dark;
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+
+  &__icon_container {
+    background-color: $white;
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover {
+      background-color: lighten($primary, 40%);
+      svg {
+        color: $primary;
+      }
+    }
+  }
 }
