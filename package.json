@@ -12,6 +12,8 @@
     "@types/node": "^16.7.13",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
+    "axios": "^1.12.2",
+    "date-fns": "^4.1.0",
     "framer-motion": "^12.23.22",
     "iconsax-react": "^0.0.8",
     "include-media": "^2.0.0",
@@ -20,6 +22,7 @@
     "react-router-dom": "^7.9.3",
     "react-scripts": "5.0.1",
     "sass": "^1.93.2",
+    "slug": "^11.0.0",
     "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
   },
@@ -46,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/slug": "^5.0.9"
   }
 }

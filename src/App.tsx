@@ -1,9 +1,9 @@
-import React from 'react';
+import { WebRouter } from "./routes";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello, World!</h1>
+    <div className="tt-app">
+      <WebRouter />
     </div>
   );
 }
