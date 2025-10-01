@@ -14,7 +14,7 @@ const MainLayout: FC<MainLayoutProps> = ({ title, children }) => {
       <Sidebar />
       <main role="main" className="sac_main">
         <Header />
-        <div className="content">{children}</div>
+        <div className="sac_main__content">{children}</div>
       </main>
     </>
   );
