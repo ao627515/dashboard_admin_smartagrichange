@@ -10,13 +10,13 @@ interface MainLayoutProps {
 const MainLayout: FC<MainLayoutProps> = ({ title, children }) => {
   titlePage(title);
   return (
-    <>
+    <div className="sac_app_main_layout">
       <Sidebar />
       <main role="main" className="sac_main">
         <Header />
         <div className="sac_main__content">{children}</div>
       </main>
-    </>
+    </div>
   );
 };
 
