@@ -8,24 +8,41 @@ $white: #ffffff; // Blanc pur
 $dark: #07020d; // Noir profond / anthracite
 
 // =========================
-// 🌈 DÉGRADÉS
+// 🌈 DÉGRADÉS ACCESSIBLES
 // =========================
-$gradient1: linear-gradient(
-  194deg,
-  rgba(255, 0, 50, 1) 0%,
-  rgba(44, 0, 255, 1) 89%
+
+// Dégradé vert foncé -> vert clair
+$gradient-primary: linear-gradient(
+  135deg,
+  $primary 0%,
+  // #386641
+  $secondary 100% // #6a994e
 );
-$gradient2: linear-gradient(
-  194deg,
-  rgba(255, 79, 0, 1) 0%,
-  rgba(153, 255, 0, 1) 89%
+
+// Dégradé clair -> vert foncé
+$gradient-light-to-primary: linear-gradient(
+  135deg,
+  $light 0%,
+  // #f7f7f7
+  $primary 100% // #386641
 );
-$gradient3: linear-gradient(
-  194deg,
-  rgba(96, 0, 255, 1) 0%,
-  rgba(253, 29, 99, 1) 50%,
-  rgba(252, 153, 69, 1) 100%
+
+// Dégradé foncé -> clair pour boutons ou headers
+$gradient-dark-to-light: linear-gradient(
+  135deg,
+  $dark 0%,
+  // #07020d
+  $light 100% // #f7f7f7
 );
+
+// Dégradé contrasté pour texte ou call-to-action
+$gradient-secondary-to-white: linear-gradient(
+  135deg,
+  $secondary 0%,
+  $white 100% // #ffffff
+);
+
+$gradient-secondary-to-dark: linear-gradient(180deg, $secondary 0%, $dark 100%);
 
 // =========================
 // 🖼️ COULEURS DE FOND

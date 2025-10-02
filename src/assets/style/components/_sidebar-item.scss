@@ -1,0 +1,56 @@
+.sac_sidebar__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  width: 100%;
+  height: 60px;
+  cursor: pointer;
+  position: relative; // utile pour l'indicateur
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__icon,
+  &__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon {
+    font-size: 1.5rem;
+  }
+
+  &__text {
+    font-size: 1rem;
+    font-weight: 500;
+    transition: font-weight 0.3s ease, color 0.3s ease;
+  }
+
+  &__indicator {
+    width: 0;
+    height: 100%;
+    border-radius: 0 16px 16px 0;
+    background: $gradient-secondary-to-dark;
+    transition: width 0.3s ease;
+  }
+
+  &--active {
+    & .sac_sidebar__item__indicator {
+      width: 8px;
+    }
+
+    & .sac_sidebar__item__icon svg {
+      color: $gradient-secondary-to-dark;
+      transition: color 0.3s ease;
+    }
+
+    & .sac_sidebar__item__text {
+      font-weight: bold;
+    }
+  }
+}
