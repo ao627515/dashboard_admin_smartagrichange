@@ -6,7 +6,7 @@ type SidebarItemProps = {
 };
 
 function SidebarItem({ icon, text }: SidebarItemProps) {
-  const [active, setActive] = useState(true);
+  const [active, setActive] = useState(false);
 
   const handleClick = () => {
     setActive((prev) => !prev);
